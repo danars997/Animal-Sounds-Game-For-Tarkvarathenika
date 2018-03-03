@@ -1,0 +1,33 @@
+.nav-container {
+    background-color: #cbcbcb;
+    margin: 0;
+    overflow: hidden;
+}
+
+.custom-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-nav li {
+    display: list-item;
+    float: left;
+}
+
+.custom-nav > li > a {
+    color: #000000;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.custom-nav > li > a:hover {
+    color: #2c382a;
+}
+
+.active {
+    background-color: #fffbfb;
+    color: white;
+}
