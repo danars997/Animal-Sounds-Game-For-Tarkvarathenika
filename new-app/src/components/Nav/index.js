@@ -14,9 +14,6 @@ export default class extends Component {
                                 <NavLink to='/shop' activeClassName='active'>Shop</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/catagories' activeClassName='active'>Catagories</NavLink>
-                            </li>
-                            <li>
                                 <NavLink to='/aboutUs' activeClassName='active'>About Us</NavLink>
                             </li>
                         </ul>
