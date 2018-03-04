@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c950d4f8-af17-41ae-aa1f-28902baecf3a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Shop/americana.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Shop/pepperone.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Shop/caesar.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Shop/cheesecake.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Shop/cookies.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Shop/mackerel.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Shop/meatloaf.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Shop/olivier.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Shop/salmon.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Shop/steak.jpg" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Catagories/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav/index.js" afterPath="$PROJECT_DIR$/src/components/Nav/index.js" />
       <change beforePath="$PROJECT_DIR$/src/components/Shop/index.js" afterPath="$PROJECT_DIR$/src/components/Shop/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -79,10 +81,15 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Shop/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="47" column="47" lean-forward="false" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+            <state relative-caret-position="-151">
+              <caret line="425" column="4" lean-forward="false" selection-start-line="425" selection-start-column="4" selection-end-line="425" selection-end-column="4" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#599#6333#0" expanded="false" />
+                <element signature="e#6363#13810#0" expanded="false" />
+                <element signature="e#13839#19649#0" expanded="false" />
+                <element signature="e#19678#26400#0" expanded="false" />
+                <element signature="e#26432#33218#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -156,7 +163,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -360,15 +367,15 @@
       <workItem from="1520072004762" duration="960000" />
       <workItem from="1520074205123" duration="10599000" />
       <workItem from="1520088887055" duration="1049000" />
-      <workItem from="1520089993268" duration="10751000" />
+      <workItem from="1520089993268" duration="14903000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28344000" />
+    <option name="totallyTimeSpent" value="32496000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -489,6 +496,11 @@
           <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#599#6333#0" expanded="false" />
+            <element signature="e#6363#13810#0" expanded="false" />
+            <element signature="e#13839#19649#0" expanded="false" />
+            <element signature="e#19678#26400#0" expanded="false" />
+            <element signature="e#26432#33218#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -776,10 +788,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Shop/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="47" column="47" lean-forward="false" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+        <state relative-caret-position="-151">
+          <caret line="425" column="4" lean-forward="false" selection-start-line="425" selection-start-column="4" selection-end-line="425" selection-end-column="4" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#599#6333#0" expanded="false" />
+            <element signature="e#6363#13810#0" expanded="false" />
+            <element signature="e#13839#19649#0" expanded="false" />
+            <element signature="e#19678#26400#0" expanded="false" />
+            <element signature="e#26432#33218#0" expanded="false" />
           </folding>
         </state>
       </provider>
