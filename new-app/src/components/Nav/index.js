@@ -1,25 +1,31 @@
 import React, { Component } from 'react';
+import Top from '../Top/index';
 import { NavLink } from 'react-router-dom';
 import './styles.css';
+import logo from './logo.jpg';
 
 export default class extends Component {
 
     render() {
         return (
-            <nav className='nav-container container-fluid'>
-                <div className='container'>
-                    <div className='row'>
-                        <ul className='custom-nav col-12 col-lg-8'>
+            <div className="Nav">
+                <Top/>
+                <img className='topImage' src={logo}/>
+                <Top/>
+                <nav className='navbar navbar-default'>
+                    <div className='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
+
+                        <ul className='nav navbar-nav nav-main'>
                             <li>
-                                <NavLink to='/shop' activeClassName='active'>Shop</NavLink>
+                                <NavLink to='/shop' activeClassName='active'>SHOP</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/aboutUs' activeClassName='active'>About Us</NavLink>
+                                <NavLink to='/aboutUs' activeClassName='active'>ABOUT US</NavLink>
                             </li>
                         </ul>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         );
     }
 }

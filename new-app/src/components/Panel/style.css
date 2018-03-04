@@ -1,0 +1,27 @@
+
+.panel {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: medium;
+    background-color: rgba(209, 209, 209, 0.65);
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    margin: 50px auto;
+    horiz-align: center;
+    text-align: center;
+    padding: auto;
+    width: 50%;
+    vertical-align: center;
+}
+
+.panel h3{
+    text-align: center;
+    font-weight: 900;
+}
+

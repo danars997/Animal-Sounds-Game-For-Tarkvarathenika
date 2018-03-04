@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
-
 import Header from './components/Nav';
 import Shop from './components/Shop/index';
 import AboutUs from './components/AboutUs';

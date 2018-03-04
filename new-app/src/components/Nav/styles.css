@@ -1,33 +1,92 @@
-.nav-container {
-    background-color: #cbcbcb;
-    margin: 0;
-    overflow: hidden;
+.topImage {
+    width: 400px; height: 162px;
 }
 
-.custom-nav {
-    list-style-type: none;
-    margin: 0;
+.nav-main li {
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    font-size: 17px;
+}
+
+.nav-main > li::before {
+    top: -2px;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+.nav-main > li:after{
+    bottom: -2px;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px);
+}
+.nav-main > li::before,
+.nav-main > li::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #90c322;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.3s,
+    -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+.nav-main > li:hover:before,
+.nav-main > li:hover:after{
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+.nav-main > li:hover, .nav-main > li:focus {
+    color: #90c322;
+}
+.nav-main > li {
+    padding: 20px 15px;
+    color: #555;
+    font-size: 17px;
+}
+.navbar-nav {
+    float: none;
+    text-align: center;
+}
+
+.navbar-nav>li {
+    float: none;
+    display: inline-block;
+    margin:0 10px;
+}
+
+.nav-main .dropdown-menu li:hover {
+    color: #fff;
+}
+.navbar-nav .active {
+    border-top: 2px solid #90c322;
+    border-bottom: 2px solid #90c322;
+    margin: -1px 0;
+}
+.navbar-nav .active li {
+    background: #fff !important;
+}
+.nav-main .dropdown-menu li:hover {
+    color: #fff;
+    background: #90c322;
+}
+.navbar-default .navbar-nav>.open>li,
+.navbar-default .navbar-nav>.open>li:hover,
+.navbar-default .navbar-nav>.open>li:focus {
+    background: transparent;
+}
+.nav-main .dropdown-menu {
+    margin-top: 5px;
     padding: 0;
 }
-
-.custom-nav li {
-    display: list-item;
-    float: left;
-}
-
-.custom-nav > li > a {
-    color: #000000;
-    display: block;
-    line-height: 2em;
-    padding: 0.5em 1em;
-    text-decoration: none;
-}
-
-.custom-nav > li > a:hover {
-    color: #2c382a;
-}
-
-.active {
-    background-color: #fffbfb;
-    color: white;
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 2px;
 }
