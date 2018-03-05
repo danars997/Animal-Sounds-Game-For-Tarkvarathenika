@@ -35,14 +35,14 @@ const Pizza = () => (
                                     <p className="price">$10</p>
                                     <p>
                                         <b>Ingredients:</b>
-                                            <ul>
+                                            <ol>
                                                 <li>Pepperoni </li>
                                                 <li>Mushrooms</li>
                                                 <li>Mozzarella</li>
                                                 <li>Bread flour</li>
                                                 <li>Olive oil</li>
                                                 <li>Tomato sauce</li>
-                                            </ul>
+                                            </ol>
                                     </p>
                                 </div>
                                 <div>
@@ -53,7 +53,7 @@ const Pizza = () => (
                                         4) For pizzas: Preheat oven to 425 degrees F. Top crusts with sauce, pepperoni and cheese.<br/>
                                         5) Bake for 18 to 20 minutes until crusts are browned and cheese is bubbly. For best results, rotate pizza pans between top and bottom oven racks halfway through baking.
                                     </p>
-                                    <Link to='order'>Order this dish</Link>
+                                    <ul className="link"><li><b><Link to='order'>Order this dish</Link></b></li></ul>
                                 </div>
                             </div>
                         </div>
@@ -78,7 +78,7 @@ const Pizza = () => (
                                 <p className="price">$10</p>
                                 <p>
                                     <b>Ingredients:</b>
-                                    <ul>
+                                    <ol>
                                         <li>Pepperoni </li>
                                         <li>Bread flour</li>
                                         <li>Olive oil</li>
@@ -89,7 +89,7 @@ const Pizza = () => (
                                         <li>Onions</li>
                                         <li>Chopped fresh basil</li>
                                         <li>Mushrooms</li>
-                                    </ul>
+                                    </ol>
                                 </p>
                             </div>
                             <div>
@@ -100,7 +100,7 @@ const Pizza = () => (
                                     4.For pizzas: Preheat oven to 425 degrees F. Top crusts with sauce, pepperoni and cheese.<br/>
                                     5.Bake for 18 to 20 minutes until crusts are browned and cheese is bubbly. For best results, rotate pizza pans between top and bottom oven racks halfway through baking.
                                 </p>
-                                <Link to='order'>Order this dish</Link>
+                                <ul className="link"><li><b><Link to='order'>Order this dish</Link></b></li></ul>
                             </div>
                         </div>
                     </div>
@@ -129,13 +129,13 @@ const Salad = () => (
                                 <p className="price">$10</p>
                                 <p>
                                     <b>Ingredients:</b>
-                                    <ul>
+                                    <ol>
                                         <li>German rye bread </li>
                                         <li>Garlic clove</li>
                                         <li>Olive oil</li>
                                         <li>Gem lettuces</li>
                                         <li>Caesar salad dressing</li>
-                                    </ul>
+                                    </ol>
                                 </p>
                             </div>
                             <div>
@@ -145,7 +145,7 @@ const Salad = () => (
                                     3.Take a bowl and put in a handful of lettuce leaves (tearing any large leaves). Sprinkle with the croutons.<br/>
                                     4.Drag a vegetable peeler over the Parmesan and let a few shavings fall into your salad. Drizzle over some caesar salad dressing and eat.
                                 </p>
-                                <Link to='order'>Order this dish</Link>
+                                <ul className="link"><li><b><Link to='order'>Order this dish</Link></b></li></ul>
                             </div>
                         </div>
                     </div>
@@ -170,7 +170,7 @@ const Salad = () => (
                                 <p className="price">$10</p>
                                 <p>
                                     <b>Ingredients:</b>
-                                    <ul>
+                                    <ol>
                                         <li>Golden potatoes </li>
                                         <li>Carrots</li>
                                         <li>Frozen peas</li>
@@ -178,7 +178,7 @@ const Salad = () => (
                                         <li>Dill pickles</li>
                                         <li>Olive oil mayonnaise</li>
                                         <li>Diced smoked ham</li>
-                                    </ul>
+                                    </ol>
                                 </p>
                             </div>
                             <div>
@@ -197,7 +197,7 @@ const Salad = () => (
                                     12.Stir in one cup of mayo to start with, and add more if you think that the salad needs more binding together.<br/>
                                     13.Cover the salad and chill for at least one hour or overnight to allow the flavors to come together. And of course, garnish with dill. This is a Russian salad, after all.
                                 </p>
-                                <Link to='order'>Order this dish</Link>
+                                <ul className="link"><li><b><Link to='order'>Order this dish</Link></b></li></ul>
                             </div>
                         </div>
                     </div>
@@ -211,51 +211,50 @@ const Salad = () => (
 const Fish = () => (
     <div className="PageProducts">
         <div id="box">
-
-        <section id="single-product">
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-5">
-                        <div className="single-product-img">
-                            <img src={mackerel}/>
-                        </div>
-                    </div>
-                    <div className="col-md-4">
-                        <div className="block">
-                            <div className="product-des">
-                                <h1>Mackerel</h1>
-                                <p className="price">$20</p>
-                                <p>
-                                    <b>Ingredients:</b>
-                                    <ul>
-                                        <li>Large pasta shells</li>
-                                        <li>Broccoli</li>
-                                        <li>Oil</li>
-                                        <li>Red onions</li>
-                                        <li>Garlic</li>
-                                        <li>Tomato purée</li>
-                                        <li>Red wine</li>
-                                        <li>Chopped tomatoes</li>
-                                        <li>Basil</li>
-                                        <li>Peppered smoked mackerel fillets</li>
-                                        <li>Light crème fraîche</li>
-                                        <li>Cheddar</li>
-                                    </ul>
-                                </p>
+            <section id="single-product">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-5">
+                            <div className="single-product-img">
+                                <img src={mackerel}/>
                             </div>
-                            <div>
-                                <p>
-                                    1.Heat the oven to 200°C/180°C fan/gas 6. Bring a large pan of water to the boil and cook the pasta shells for 2 minutes less than the pack instructions. Add the head of broccoli, sliced into florets, for the last 2 minutes of the cooking time, then drain and set aside.<br/>
-                                    2.Meanwhile, in a large sauté pan, heat a glug of oil and fry the red onions for 5 minutes. Add the garlic and tomato purée, fry for a few minutes, then add the red wine. Bubble for 2 minutes, then add the chopped tomatoes and basil. Cook for 10 minutes, then season.<br/>
-                                    3.Remove the skin from a the mackerel fillets and break up into bite-size pieces. Stir into the pan with the remaining basil and light crème fraîche. Spoon into a 2 litre baking dish (or keep in the pan if it’s ovenproof) and top with grated mature cheddar. Cook in the oven for 20-25 minutes until golden and piping hot throughout.
-                                </p>
-                                <Link to='order'>Order this dish</Link>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="block">
+                                <div className="product-des">
+                                    <h1>Mackerel</h1>
+                                    <p className="price">$20</p>
+                                    <p>
+                                        <b>Ingredients:</b>
+                                        <ol>
+                                            <li>Large pasta shells</li>
+                                            <li>Broccoli</li>
+                                            <li>Oil</li>
+                                            <li>Red onions</li>
+                                            <li>Garlic</li>
+                                            <li>Tomato purée</li>
+                                            <li>Red wine</li>
+                                            <li>Chopped tomatoes</li>
+                                            <li>Basil</li>
+                                            <li>Peppered smoked mackerel fillets</li>
+                                            <li>Light crème fraîche</li>
+                                            <li>Cheddar</li>
+                                        </ol>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        1.Heat the oven to 200°C/180°C fan/gas 6. Bring a large pan of water to the boil and cook the pasta shells for 2 minutes less than the pack instructions. Add the head of broccoli, sliced into florets, for the last 2 minutes of the cooking time, then drain and set aside.<br/>
+                                        2.Meanwhile, in a large sauté pan, heat a glug of oil and fry the red onions for 5 minutes. Add the garlic and tomato purée, fry for a few minutes, then add the red wine. Bubble for 2 minutes, then add the chopped tomatoes and basil. Cook for 10 minutes, then season.<br/>
+                                        3.Remove the skin from a the mackerel fillets and break up into bite-size pieces. Stir into the pan with the remaining basil and light crème fraîche. Spoon into a 2 litre baking dish (or keep in the pan if it’s ovenproof) and top with grated mature cheddar. Cook in the oven for 20-25 minutes until golden and piping hot throughout.
+                                    </p>
+                                    <ul className="link"><li><b><Link to='order'>Order this dish</Link></b></li></ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
         </div>
 
         <div id="box">
@@ -274,7 +273,7 @@ const Fish = () => (
                                 <p className="price">$20</p>
                                 <p>
                                     <b>Ingredients:</b>
-                                    <ul>
+                                    <ol>
                                         <li>Red onions</li>
                                         <li>Red pepper</li>
                                         <li>Yellow pepper</li>
@@ -286,7 +285,7 @@ const Fish = () => (
                                         <li>Sustainable salmon fillets</li>
                                         <li>Lemon juice</li>
                                         <li>Basil</li>
-                                    </ul>
+                                    </ol>
                                 </p>
                             </div>
                             <div>
@@ -294,7 +293,7 @@ const Fish = () => (
                                     1.Preheat the oven to 200°C/fan180°C/gas 6. Tumble the onions, peppers, courgette, garlic and medium tomatoes into a shallow roasting tray. Pour over 3 tbsp olive oil, season with sea salt and ground black pepper, then gently toss to coat. Roast for 20 minutes.<br/>
                                     2.Add the vine tomatoes to the tray and lay the salmon fillets on top. Season, then drizzle with a little more oil and a squeeze of lemon juice. Return to the oven for 10-12 minutes until the salmon is just cooked through and the vegetables are tender. Scatter with fresh basil leaves to serve.
                                 </p>
-                                <Link to='order'>Order this dish</Link>
+                                <ul className="link"><li><b><Link to='order'>Order this dish</Link></b></li></ul>
                             </div>
                         </div>
                     </div>
@@ -308,7 +307,6 @@ const Fish = () => (
 const Meat = () => (
     <div className="PageProducts">
         <div id="box">
-
         <section id="single-product">
             <div className="container">
                 <div className="row">
@@ -324,7 +322,7 @@ const Meat = () => (
                                 <p className="price">$20</p>
                                 <p>
                                     <b>Ingredients:</b>
-                                    <ul>
+                                    <ol>
                                         <li>Bacon lardons</li>
                                         <li>White breadcrumbs</li>
                                         <li>Free-range egg</li>
@@ -339,7 +337,7 @@ const Meat = () => (
                                         <li>Finely</li>
                                         <li>Minced beef</li>
                                         <li>Minced pork</li>
-                                    </ul>
+                                    </ol>
                                 </p>
                             </div>
                             <div>
@@ -350,7 +348,7 @@ const Meat = () => (
                                     4.Meanwhile, make the sauce. Fry the onions, stirring, for about 5 minutes or until soft and golden. Sprinkle over the sugar and cook for 5 minutes, stirring constantly. Add the garlic and tomato purée and cook for a further 5 minutes. Add the stock and ale, bring to the boil and bubble for about 6-7 minutes to reduce by a third. Finally, mix in the cornflour paste and simmer for 1 minute, stirring until thickened. Season to taste, then set aside and keep warm.<br/>
                                     5.Take the meatloaf out of the oven and leave to stand for 10 minutes before turning out of the tin and slicing. Serve with a good dollop of mash and some steamed greens, and the sauce poured over the top.
                                 </p>
-                                <Link to='order'>Order this dish</Link>
+                                <ul className="link"><li><b><Link to='order'>Order this dish</Link></b></li></ul>
                             </div>
                         </div>
                     </div>
@@ -375,7 +373,7 @@ const Meat = () => (
                                 <p className="price">$20</p>
                                 <p>
                                     <b>Ingredients:</b>
-                                    <ul>
+                                    <ol>
                                         <li>Bag jersey royals</li>
                                         <li>Olive oil</li>
                                         <li>Oregano</li>
@@ -385,7 +383,7 @@ const Meat = () => (
                                         <li>Beef tomatoes</li>
                                         <li>Rocket</li>
                                         <li>Parmesan</li>
-                                    </ul>
+                                    </ol>
                                 </p>
                             </div>
                             <div>
@@ -395,7 +393,7 @@ const Meat = () => (
                                     3.Warm the remaining oil and the garlic in the frying pan for 2-3 minutes, then add the vinegar and season with salt and pepper to make a warm dressing. After a minute, stir in the remaining oregano.<br/>
                                     4.Arrange the sliced tomatoes on 4 plates. Top with the rocket, sliced steak, dressing and parmesan shavings. Serve with the potatoes.
                                 </p>
-                                <Link to='order'>Order this dish</Link>
+                                <ul className="link"><li><b><Link to='order'>Order this dish</Link></b></li></ul>
                             </div>
                         </div>
                     </div>
@@ -425,7 +423,7 @@ const Dessert = () => (
                                 <p className="price">$10</p>
                                 <p>
                                     <b>Ingredients:</b>
-                                    <ul>
+                                    <ol>
                                         <li>Graham cracker crumbs</li>
                                         <li>Confectioners' sugar</li>
                                         <li>Butter</li>
@@ -434,7 +432,7 @@ const Dessert = () => (
                                         <li>Eggs</li>
                                         <li>Raspberries</li>
                                         <li>Ground cinnamon</li>
-                                    </ul>
+                                    </ol>
                                 </p>
                             </div>
                             <div>
@@ -451,7 +449,7 @@ const Dessert = () => (
                                     10.Add 1 to 2 tablespoons granulated sugar, to taste. Stir in a pinch of ground cinnamon, if desired.<br/>
                                     11.Spoon the topping over the cheesecake, and cut slices to serve. Alternatively, cut slices, and top each with a dollop of topping.
                                 </p>
-                                <Link to='order'>Order this dish</Link>
+                                <ul className="link"><li><b><Link to='order'>Order this dish</Link></b></li></ul>
                             </div>
                         </div>
                     </div>
@@ -476,7 +474,7 @@ const Dessert = () => (
                                 <p className="price">$10</p>
                                 <p>
                                     <b>Ingredients:</b>
-                                    <ul>
+                                    <ol>
                                         <li>Granulated sugar</li>
                                         <li>Brown sugar</li>
                                         <li>Butter</li>
@@ -488,7 +486,7 @@ const Dessert = () => (
                                         <li>Coarsely chopped nuts</li>
                                         <li>Chocolate chips</li>
 
-                                    </ul>
+                                    </ol>
                                 </p>
                             </div>
                             <div>
@@ -498,7 +496,7 @@ const Dessert = () => (
                                     3.Drop dough by rounded tablespoonfuls about 2 inches apart onto ungreased cookie sheet.<br/>
                                     4.Bake 8 to 10 minutes or until light brown (centers will be soft). Cool slightly; remove from cookie sheet. Cool on wire rack.
                                 </p>
-                                <Link to='order'>Order this dish</Link>
+                                <ul className="link"><li><b><Link to='order'>Order this dish</Link></b></li></ul>
                             </div>
                         </div>
                     </div>
@@ -520,6 +518,75 @@ const Order = () => (
                 </div>
             </div>
         </section>
+
+        <div id="box">
+        <section id="blog">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-9 clearfix">
+                        <div className="leave-comment">
+                            <form className="form-horizontal" role="form">
+                                <div className="form-group">
+                                    <label className="col-sm-2 control-label">Number of servings</label>
+                                    <div className="col-sm-10">
+                                        <input type="text" className="form-control" id="inputnumber" placeholder="Number of servings"/>
+                                    </div>
+                                </div>
+                                <div className="form-group">
+                                    <label className="col-sm-2 control-label">Contact Name</label>
+                                    <div className="col-sm-10">
+                                        <input type="text" className="form-control" id="inputname" placeholder="Contact Name"/>
+                                    </div>
+                                </div>
+                                <div className="form-group">
+                                    <label className="col-sm-2 control-label">Region</label>
+                                    <div className="col-sm-10">
+                                        <input type="region" className="form-control" id="inputRegion" placeholder="State/Province/Region"/>
+                                    </div>
+                                </div>
+                                <div className="form-group">
+                                    <label className="col-sm-2 control-label">City</label>
+                                    <div className="col-sm-10">
+                                        <input type="text" className="form-control" id="inputCity" placeholder="City"/>
+                                    </div>
+                                </div>
+                                <div className="form-group">
+                                    <label className="col-sm-2 control-label">Address</label>
+                                    <div className="col-sm-10">
+                                        <input type="text" className="form-control" id="inputAddress" placeholder="Street Address"/>
+                                    </div>
+                                </div>
+                                <div className="form-group">
+                                    <label className="col-sm-2 control-label">Mobile</label>
+                                    <div className="col-sm-10">
+                                        <input type="text" className="form-control" id="inputMobile" placeholder="Mobile"/>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <ul className="link"><li><b><Link to='thanks'>Order this dish</Link></b></li></ul>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </div>
+)
+
+const Thanks = () => (
+    <div className="PageOrder">
+        <section id="topic-header">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-4">
+                        <h1>Thanks for your order!</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 )
 
@@ -529,11 +596,11 @@ class Navigation extends React.Component {
             <BrowserRouter history={{history}}>
                 <div>
                     <ul className="list">
-                        <li><Link to="/pizza">Pizza</Link></li>
-                        <li><Link to="/salad">Salad</Link></li>
-                        <li><Link to="/fish">Fish</Link></li>
-                        <li><Link to="/meat">Meat</Link></li>
-                        <li><Link to="/dessert">Dessert</Link></li>
+                        <li><b><Link to="/pizza">Pizza</Link></b></li>
+                        <li><b><Link to="/salad">Salad</Link></b></li>
+                        <li><b><Link to="/fish">Fish</Link></b></li>
+                        <li><b><Link to="/meat">Meat</Link></b></li>
+                        <li><b><Link to="/dessert">Dessert</Link></b></li>
                     </ul>
 
                     <hr/>
@@ -544,6 +611,7 @@ class Navigation extends React.Component {
                     <Route exact path="/meat" component={Meat}/>
                     <Route exact path="/dessert" component={Dessert}/>
                     <Route exact path="/order" component={Order}/>
+                    <Route exact path="/thanks" component={Thanks}/>
 
                 </div>
             </BrowserRouter>

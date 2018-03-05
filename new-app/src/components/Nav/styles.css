@@ -65,9 +65,6 @@
     margin:0 10px;
 }
 
-.nav-main .dropdown-menu li:hover {
-    color: #fff;
-}
 .navbar-nav .active {
     border-top: 2px solid #90c322;
     border-bottom: 2px solid #90c322;
@@ -76,19 +73,9 @@
 .navbar-nav .active li {
     background: #fff !important;
 }
-.nav-main .dropdown-menu li:hover {
-    color: #fff;
-    background: #90c322;
-}
+
 .navbar-default .navbar-nav>.open>li,
 .navbar-default .navbar-nav>.open>li:hover,
 .navbar-default .navbar-nav>.open>li:focus {
     background: transparent;
-}
-.nav-main .dropdown-menu {
-    margin-top: 5px;
-    padding: 0;
-}
-.navbar-nav>li>.dropdown-menu {
-    margin-top: 2px;
 }
