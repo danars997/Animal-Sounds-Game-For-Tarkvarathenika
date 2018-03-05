@@ -117,6 +117,10 @@ header {
 .navbar-nav .active a {
 	background: #fff !important;
 }
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+background: transparent;}
 
 
 
@@ -869,12 +873,14 @@ footer .block span {
 	border-left:1px solid #dedede; 
 	border-right:1px solid #dedede; 
 }
-.single-product-img {
-	border:1px solid #dedede;
+#single-product .product img {
+	display: block;
+	margin: 0 auto;
+	width: 25%;
 }
 .product-des {
 	border:1px solid #dedede;
-	padding:10px 15px;
+	padding:5px;
 }
 .product-des .view-link {
 	background: #90c322;
@@ -885,4 +891,8 @@ footer .block span {
 }
 .top-catagori-heading {
 	margin-top: 0;
+}
+#single-product + section{ 
+	margin-top: 20px;
+	margin-bottom: 30px;
 }
