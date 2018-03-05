@@ -143,7 +143,7 @@ background: transparent;}
 
 .products {
 	text-align: center;
-	margin-bottom: 65px;
+	margin-bottom: 25px;
 	cursor: pointer;
 }
 
@@ -173,10 +173,6 @@ background: transparent;}
 }
 .products a h3:hover {
 	color: #90c322;
-}
-#products + section{ 
-	margin-top: 20px;
-	margin-bottom: 30px;
 }
 .view-link {
 	text-align: center;
@@ -465,10 +461,8 @@ footer .block span {
 
 
 #topic-header {
-	background: #FCFCFC;
-	width: 100%;
-	padding: 20px 0;
-	margin: -20px 0;
+	text-align: center;
+	margin-bottom: 25px;
 }
 #topic-header h1,#topic-header p {
 	margin: 0;
@@ -853,33 +847,16 @@ footer .block span {
 
 /*	Shop Single Page Start.......
     ==================================================*/
-#single-product .tab-content {
-	padding: 10px;
-	border-left:1px solid #dedede;
-	border-right:1px solid #dedede;
-	border-bottom:1px solid #dedede;
-
+.product {
+	text-align: center;
+	margin-bottom: 25px;
 }
-#single-product .nav-tabs {
-	margin-top:30px; 
-}
-#single-product  .nav-tabs .active a {
-	background: #90c322;
-	color: #fff;
-}
-#single-product  .nav-tabs li a {
-	color: #333;
-	border-top:1px solid #dedede; 
-	border-left:1px solid #dedede; 
-	border-right:1px solid #dedede; 
-}
-#single-product .product img {
+.product img {
 	display: block;
 	margin: 0 auto;
 	width: 25%;
 }
 .product-des {
-	border:1px solid #dedede;
 	padding:5px;
 }
 .product-des .view-link {
@@ -888,11 +865,4 @@ footer .block span {
 }
 .product-des .view-link i {
 	color: #fff;
-}
-.top-catagori-heading {
-	margin-top: 0;
-}
-#single-product + section{ 
-	margin-top: 20px;
-	margin-bottom: 30px;
 }
