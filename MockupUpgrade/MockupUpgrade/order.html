@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Product</title>
+	<title>Order</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<!-- Fonts -->
@@ -38,16 +38,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-7">
-					<p class="contact-action"><i class="fa fa-phone-square"></i>IN CASE OF ANY QUESTIONS, CALL THIS NUMBER: <strong>+(372) 84 302 194</strong></p>
+					<p class="contact-action"></p>
 				</div>
-			</div> <!-- End Of /.row -->
-		</div>	<!-- End Of /.Container -->
-
-	
-	<!-- MODAL Start
-    	================================================== -->
-
-	</section>  <!-- End of /Section -->
+				<div class="col-md-2">
+				</div>
+			</div> 
+		</div>
+    </section>
 	
 
 
@@ -73,80 +70,97 @@
     ================================================== -->
 
 	<nav class="navbar navbar-default">
+		<div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		    </div> <!-- End of /.navbar-header -->
+
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      	<ul class="nav navbar-nav nav-main">
 		        	<li class="active"><a href="#">HOME</a></li>
-					<li><a href="index.html">SALADS</a></li>
-					<li><a href="index.html">MEAT</a></li>
-					<li><a href="index.html">FISH</a></li>
-					<li><a href="index.html">PIZZA</a></li>
-					<li><a href="index.html">DESSERTS</a></li>
+					<li><a href="#.html">SALADS</a></li>
+					<li><a href="#">MEAT</a></li>
+					<li><a href="#">FISH</a></li>
+					<li><a href="#">PIZZA</a></li>
+					<li><a href="#">DESSERTS</a></li>
+					
 		        </ul> <!-- End of /.nav-main -->
 		    </div>	<!-- /.navbar-collapse -->
-		
+		</div>	<!-- /.container-fluid -->
 	</nav>	<!-- End of /.nav -->
+    
+    
 
-
-
-<!-- breadcrumb Start
+<!-- Breadcrumbs Start
     ================================================== -->
 
-
-
-
-
-	<section id="single-product">
+	<section id="topic-header">
 		<div class="container">
-					<div class="product">
-						<img src="images/pancakes.jpg" alt="">
-					</div> <!-- End of /.col-md-5 -->
-		</div>	<!-- End of /.Container -->
+			<div class="row">
+				<div class="col-md-4">
+					<h1>Order</h1>
+				</div>	<!-- End of /.col-md-4 -->
+			</div>	<!-- End of /.row -->
+		</div>	<!-- End of /.container -->
+	</section>	<!-- End of /#Topic-header -->
+
+
+	<section id="blog">
 		<div class="container">
-				<div class="product-des .view-link">
-					<div class="product-des">
-						<h4>Claritas est etiam</h4>
-						<p class="price">$380</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, culpa, esse, magni omnis blanditiis unde vitae in nobis fuga optio numquam at ipsum impedit perspiciatis quia rem consequatur recusandae repudiandae provident nemo voluptatibus corporis ab id iste pariatur ipsam vero porro eos eaque rerum nam dolorum mollitia adipisci. Quaerat, ullam!</p>
-						<a class="view-link" href="order.html"><i class="fa fa-plus-circle"></i>Proceed to checkout</a>
-					</div>	<!-- End of /.product-des -->
-				</div> <!-- End of /.block -->
-		</div>	<!-- End of /.col-md-4 -->
+			<div class="row">
+				<div class="col-md-9 clearfix">
+					<div class="leave-comment">
+						<h5>Shipping Address</h5>
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+						    	<label for="inputname" class="col-sm-2 control-label">Contact Name</label>
+							    <div class="col-sm-10">
+							      	<input type="text" class="form-control" id="inputname" placeholder="Contact Name">
+							    </div>
+						  	</div>	<!-- End of /.form-group -->
+						  	<div class="form-group">
+						    	<label for="inputRegion" class="col-sm-2 control-label">Region</label>
+							    <div class="col-sm-10">
+							      	<input type="region" class="form-control" id="inputRegion" placeholder="State/Province/Region">
+							    </div>
+						  	</div>	<!-- End of /.form-group -->
+						  	<div class="form-group">
+						    	<label for="inputCity" class="col-sm-2 control-label">City</label>
+							    <div class="col-sm-10">
+							      	<input type="text" class="form-control" id="inputCity" placeholder="City">
+							    </div>
+						  	</div>	<!-- End of /.form-group -->
+						  	<div class="form-group">
+						    	<label for="inputAddress" class="col-sm-2 control-label">Street Address</label>
+							    <div class="col-sm-10">
+							      	<input type="text" class="form-control" id="inputAddress" placeholder="Street Address">
+							    </div>
+						  	</div>	<!-- End of /.form-group -->
+                            <div class="form-group">
+						    	<label for="inputMobile" class="col-sm-2 control-label">Mobile</label>
+							    <div class="col-sm-10">
+							      	<input type="text" class="form-control" id="inputMobile" placeholder="Mobile">
+							    </div>
+						  	</div>	<!-- End of /.form-group -->
+						  		
+				            <div >
+                                <a class="view-link" href="thanks.html"><i class="fa fa-plus-circle"></i>Order</a>
+						    </div>
+						</form>	<!-- End of /.form-horizontal -->
+					</div>	<!-- End of /.leave comments -->
+				</div>	<!-- End of /.col-md-9 -->
+			</div>	<!-- End of /.row -->
+		</div>	<!-- End of /.container -->
+	</section> <!-- End of /.Section -->
 
-	</section> <!-- End of /.Single-product -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<!-- FOOTER Start
+<!-- FOOTER Start
     ================================================== -->
 
 	<footer>
