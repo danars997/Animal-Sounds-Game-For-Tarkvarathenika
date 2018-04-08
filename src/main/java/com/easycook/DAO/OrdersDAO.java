@@ -1,4 +1,4 @@
-package com.easycook.DAO;
+package com.easycook.dao;
 
 public class OrdersDAO {
     public String getAllOrdersJSON(){}
