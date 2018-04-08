@@ -1,57 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b96956fc-12c6-4e12-90fa-4ff85af2d725" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/ingredients/dessert/cheesecake/cheesecake.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/ingredients/dessert/cookies/cookies.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/ingredients/dessert/pancakes/pancakes.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/ingredients/fish/mackerel/mackerel.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/ingredients/fish/salmon/salmon.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/ingredients/meat/meatloaf/meatloaf.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/ingredients/meat/steak/steak.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/ingredients/pizza/americana/americana.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/ingredients/pizza/pepperone/pepperone.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/ingredients/salad/caesar/caesar.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/ingredients/salad/olivier/olivier.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/name/dessert/cheesecake/cheesecake.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/name/dessert/cookies/cookies.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/name/dessert/pancakes/pancakes.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/name/fish/mackerel/mackerel.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/name/fish/salmon/salmon.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/name/meat/meatloaf/meatloaf.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/name/meat/steak/steak.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/name/pizza/americana/americana.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/name/pizza/pepperone/pepperone.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/name/salad/caesar/caesar.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/name/salad/olivier/olivier.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/pictures/dessert/cheesecake/cheesecake.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/pictures/dessert/cookies/cookies.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/pictures/dessert/pancakes/pancakes.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/pictures/fish/mackerel/mackerel.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/pictures/fish/salmon/salmon.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/pictures/meat/meatloaf/meatloaf.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/pictures/meat/steak/steak.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/pictures/pizza/americana/americana.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/pictures/pizza/pepperone/pepperone.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/pictures/salad/caesar/caesar.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/pictures/salad/olivier/olivier.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/recipe/dessert/cheesecake/cheesecake.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/recipe/dessert/cookies/cookies.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/recipe/dessert/pancakes/pancakes.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/recipe/fish/mackerel/mackerel.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/recipe/fish/salmon/salmon.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/recipe/meat/meatloaf/meatloaf.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/recipe/meat/steak/steak.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/recipe/pizza/americana/americana.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/recipe/pizza/pepperone/pepperone.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/recipe/salad/caesar/caesar.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/MockupUpgrade/andmebaas/recipe/salad/olivier/olivier.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pizza.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/salat_quotmilie_kroshkiquot-46828.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/zagolovok.png" afterPath="" />
-    </list>
+    <list default="true" id="b96956fc-12c6-4e12-90fa-4ff85af2d725" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -160,41 +110,6 @@
               <item name="springBoot" type="b2602c69:ProjectViewProjectNode" />
               <item name="EASYCOOK-For-Tarkvarathenika" type="462c0819:PsiDirectoryNode" />
               <item name="MockupUpgrade" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springBoot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EASYCOOK-For-Tarkvarathenika" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springBoot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EASYCOOK-For-Tarkvarathenika" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springBoot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EASYCOOK-For-Tarkvarathenika" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springBoot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EASYCOOK-For-Tarkvarathenika" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="easycook" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springBoot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EASYCOOK-For-Tarkvarathenika" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="easycook" type="462c0819:PsiDirectoryNode" />
-              <item name="DAO" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springBoot" type="b2602c69:ProjectViewProjectNode" />
@@ -320,16 +235,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523179144767</updated>
-      <workItem from="1523179157786" duration="3675000" />
+      <workItem from="1523179157786" duration="4242000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3675000" />
+    <option name="totallyTimeSpent" value="4242000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -345,7 +259,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
