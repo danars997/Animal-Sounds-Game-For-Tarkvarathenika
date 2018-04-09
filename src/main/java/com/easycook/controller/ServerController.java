@@ -21,4 +21,10 @@ public class ServerController{
     {
         return "css/" + cssfile;
     }
+
+    @GetMapping(value = "/js/{jsfile}")
+    public String getJsFile(@PathVariable("jsfile") String jsfile)
+    {
+        return "js/" + jsfile;
+    }
 }
