@@ -21,6 +21,11 @@ public class ServerController{
         return "order";
     }
 
+    @GetMapping(value = "/thanks")
+    public String thanks() {
+        return "thanks";
+    }
+
     @GetMapping(value = "/recipes/{recipefile}")
     public String getRecipe(@PathVariable("recipefile") String recipefile) {
         return "recipes/" + recipefile;
