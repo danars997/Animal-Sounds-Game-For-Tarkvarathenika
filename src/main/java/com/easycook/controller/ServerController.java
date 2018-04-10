@@ -1,10 +1,11 @@
 package com.easycook.controller;
 
+import com.easycook.dao.Order;
 import com.easycook.service.ServerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class ServerController{
@@ -19,6 +20,18 @@ public class ServerController{
     @GetMapping(value = "/order")
     public String order() {
         return "order";
+    }
+
+    @GetMapping(value = "/getallorders")
+    public ResponseEntity<String> getAllOrders() {
+        String ordersJSON = serverService.getAllOrdersJSON();
+        return ResponseEntity.ok(ordersJSON);
+    }
+
+    @RequestMapping(value = "/saveorder", method = RequestMethod.POST)
+    public ResponseEntity<Object> checkPassword(@RequestBody String json) {
+        serverService.addNewOrder(json);
+        return ResponseEntity.ok("Your order is saved!");
     }
 
     @GetMapping(value = "/thanks")

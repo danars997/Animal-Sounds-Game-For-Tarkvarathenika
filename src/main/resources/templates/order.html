@@ -149,8 +149,8 @@
 							    </div>
 						  	</div>	<!-- End of /.form-group -->
 						  	
-				            <div class="product-des">
-                                <a class="view-link" href="/thanks"><i class="fa fa-plus-circle"></i>Order</a>
+				            <div class="product-des" onclick="submitForm()">
+                                <a class="view-link"><i class="fa fa-plus-circle"></i>Order</a>
 						    </div>
 						</form>	<!-- End of /.form-horizontal -->
 					</div>	<!-- End of /.leave comments -->
@@ -217,7 +217,6 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						
 						<p class="copyright-text pull-right">Designed by: easycook</p>
 					</div>	<!-- End Of /.col-md-12 -->	
 				</div>	<!-- End Of /.row -->	
@@ -227,7 +226,41 @@
 	
 	<a id="back-top" href="#"></a>
 	<script>
-
+        function success_handler(data,status)
+        {
+            window.location.href="/thanks";
+        }
+        function error_handler(xhr)
+        {
+            alert(xhr.responseText+" "+xhr.status);
+        }
+        function formToJSON()
+        {
+            var formObject = {
+            	dish:$("#dish").val(),
+				numberOfServings:parseInt($("#numberOfServings").val()),
+            	contactName:$("#contactName").val(),
+            	city:$("#city").val(),
+            	region:$("#region").val(),
+            	address:$("#address").val(),
+            	comments:$("#comments").val(),
+            	contactNumber:$("#contactNumber").val()
+            };
+            var jsonData = JSON.stringify(formObject);
+            return jsonData;
+        }
+        function submitForm()
+        {
+            $.ajax({
+                type:"POST",
+                url:"/saveorder",
+                data:formToJSON(),
+                contentType: "text/plain;charset=UTF-8",
+                dataType: "text",
+                success:success_handler,
+                error:error_handler
+            });
+        }
 	</script>
 </body>
 </html>
