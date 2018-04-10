@@ -10,21 +10,15 @@
 	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
 
 	<!-- Css -->
-	<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" />
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="https://clothobserve.com/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/responsive.css">
 
 	<!-- jS -->
-	<script src="js/jquery.min.js" type="text/javascript"></script>
-	<script src="js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
-	<script src="js/owl.carousel.min.js" type="text/javascript"></script>
-	<script src="js/jquery.nicescroll.js"></script>
-	<script src="js/jquery.scrollUp.min.js"></script>
-	<script src="js/main.js" type="text/javascript"></script>
+	<script type="text/javascript" src="https://clothobserve.com/js/vendor/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="https://clothobserve.com/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/js/order.js"></script>
 
 
 </head>
@@ -54,7 +48,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<a href="#">
-						<img src="images/logo.jpg" alt="logo">
+						<img src="https://clothobserve.com/easycook/logo.jpg" alt="logo">
 					</a>
 				</div>	<!-- End of /.col-md-12 -->
 			</div>	<!-- End of /.row -->
@@ -80,12 +74,12 @@
 
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      	<ul class="nav navbar-nav nav-main">
-		        	<li><a href="index.html">HOME</a></li>
-					<li><a href="index.html">SALADS</a></li>
-					<li><a href="index.html">MEAT</a></li>
-					<li><a href="index.html">FISH</a></li>
-					<li><a href="index.html">PIZZA</a></li>
-					<li><a href="index.html">DESSERTS</a></li>
+		        	<li><a href="/">HOME</a></li>
+					<li><a href="/">SALADS</a></li>
+					<li><a href="/">MEAT</a></li>
+					<li><a href="/">FISH</a></li>
+					<li><a href="/">PIZZA</a></li>
+					<li><a href="/">DESSERTS</a></li>
 					
 		        </ul> <!-- End of /.nav-main -->
 		    </div>	<!-- /.navbar-collapse -->
@@ -107,56 +101,56 @@
 						<form class="form-horizontal" role="form">
 							
 							<div class="form-group">
-						    	<label for="inputAddress" class="col-sm-2 control-label">Dish</label>
+						    	<label for="dish" class="col-sm-2 control-label">Dish</label>
 							    <div class="col-sm-10">
-							      	<input type="text" class="form-control" id="inputAddress" placeholder="Chosen dish">
+							      	<input type="text" class="form-control" id="dish" value="" readonly>
 							    </div>
 						  	</div>	<!-- End of /.form-group -->
 							<div class="form-group">
-						    	<label for="inputAddress" class="col-sm-2 control-label">Number of servings</label>
+						    	<label for="numberOfServings" class="col-sm-2 control-label">Number of servings</label>
 							    <div class="col-sm-10">
-							      	<input type="text" class="form-control" id="inputAddress" placeholder="Number of servings">
+							      	<input type="text" class="form-control" id="numberOfServings" placeholder="Number of servings">
 							    </div>
 						  	</div>	<!-- End of /.form-group -->
 							<div class="form-group">
-						    	<label for="inputname" class="col-sm-2 control-label">Contact Name</label>
+						    	<label for="contactName" class="col-sm-2 control-label">Contact Name</label>
 							    <div class="col-sm-10">
-							      	<input type="text" class="form-control" id="inputname" placeholder="Name">
+							      	<input type="text" class="form-control" id="contactName" placeholder="Name">
 							    </div>
 						  	</div>	<!-- End of /.form-group -->
 							<div class="form-group">
-						    	<label for="inputCity" class="col-sm-2 control-label">City</label>
+						    	<label for="city" class="col-sm-2 control-label">City</label>
 							    <div class="col-sm-10">
-							      	<input type="text" class="form-control" id="inputCity" placeholder="City">
+							      	<input type="text" class="form-control" id="city" placeholder="City">
 							    </div>
 						  	</div>	<!-- End of /.form-group -->
 						  	<div class="form-group">
-						    	<label for="inputRegion" class="col-sm-2 control-label">Region</label>
+						    	<label for="region" class="col-sm-2 control-label">Region</label>
 							    <div class="col-sm-10">
-							      	<input type="region" class="form-control" id="inputRegion" placeholder="State/Province/Region">
+							      	<input type="region" class="form-control" id="region" placeholder="State/Province/Region">
 							    </div>
 						  	</div>	<!-- End of /.form-group --> 	
 						  	<div class="form-group">
-						    	<label for="inputAddress" class="col-sm-2 control-label">Street and home/flat number</label>
+						    	<label for="address" class="col-sm-2 control-label">Street and home/flat number</label>
 							    <div class="col-sm-10">
-							      	<input type="text" class="form-control" id="inputAddress" placeholder="Street Address">
+							      	<input type="text" class="form-control" id="address" placeholder="Street Address">
 							    </div>
 						  	</div>	<!-- End of /.form-group -->
 							<div class="form-group">
-						    	<label for="inputname" class="col-sm-2 control-label">Comments</label>
+						    	<label for="comments" class="col-sm-2 control-label">Comments</label>
 							    <div class="col-sm-10">
-							      	<input type="text" class="form-control" id="inputname" placeholder="Leave your comments or wishes">
+							      	<input type="text" class="form-control" id="comments" placeholder="Leave your comments or wishes">
 							    </div>
 						  	</div>	<!-- End of /.form-group -->
                             <div class="form-group">
-						    	<label for="inputMobile" class="col-sm-2 control-label">Contact number</label>
+						    	<label for="contactNumber" class="col-sm-2 control-label">Contact number</label>
 							    <div class="col-sm-10">
-							      	<input type="text" class="form-control" id="inputMobile" placeholder="Phone number">
+							      	<input type="text" class="form-control" id="contactNumber" placeholder="Phone number">
 							    </div>
 						  	</div>	<!-- End of /.form-group -->
 						  	
 				            <div class="product-des">
-                                <a class="view-link" href="thanks.html"><i class="fa fa-plus-circle"></i>Order</a>
+                                <a class="view-link" href="/thanks"><i class="fa fa-plus-circle"></i>Order</a>
 						    </div>
 						</form>	<!-- End of /.form-horizontal -->
 					</div>	<!-- End of /.leave comments -->
@@ -176,7 +170,7 @@
 				<div class="col-md-4">
 					<div class="block clearfix">
 						<a href="#">
-							<img src="images/footer-logo.jpg" alt="">
+							<img src="https://clothobserve.com/easycook/footer-logo.jpg" alt="">
 						</a>
 						<p>
 						We make cooking easy, fast and affordable for everybody! Experience the taste of fresh, home-made food, using modern recipes from the best restaurants in the world. We will provide you with all of the ingredients you need, in the right quantities, on your schedule.	
@@ -196,16 +190,16 @@
 						<h4>COMING SOON</h4>
 						<div class="media">
 						  	<a class="pull-left" href="#">
-						    	<img class="media-object" src="images/Prawn_and_avocado_salad.jpg" alt="...">
+						    	<img class="media-object" src="https://clothobserve.com/easycook/Prawn_and_avocado_salad.jpg" alt="...">
 						  	</a>
 						  	<a class="pull-left" href="#">
-						    	<img class="media-object" src="images/chockolatecake.jpg" alt="...">
+						    	<img class="media-object" src="https://clothobserve.com/easycook/chockolatecake.jpg" alt="...">
 						  	</a>
 						  	<a class="pull-left" href="#">
-						    	<img class="media-object" src="images/lapsha.jpg" alt="...">
+						    	<img class="media-object" src="https://clothobserve.com/easycook/lapsha.jpg" alt="...">
 						  	</a>
 						  	<a class="pull-left" href="#">
-						    	<img class="media-object" src="images/indian-food.jpg" alt="...">
+						    	<img class="media-object" src="https://clothobserve.com/easycook/indian-food.jpg" alt="...">
 						  	</a>
 						  	
 						</div>	<!-- End Of /.media -->
