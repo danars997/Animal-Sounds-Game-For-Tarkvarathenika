@@ -16,6 +16,11 @@ public class ServerController{
         return "index";
     }
 
+    @GetMapping(value = "/recipes/{recipefile}")
+    public String getRecipe(@PathVariable("recipefile") String recipefile) {
+        return "recipes/" + recipefile;
+    }
+
     @GetMapping(value = "/css/{cssfile}")
     public String getCssFile(@PathVariable("cssfile") String cssfile)
     {
