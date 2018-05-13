@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Sign in</title>
+		<meta name="description" content="EasyCook Sign In Form">
+		<meta name="viewport" content="width=device-width">
+		<link rel='icon' type='image/x-icon' href='/static/favicon.ico'/>
+		<link rel="apple-touch-icon-precomposed" href="/static/apple-touch-icon-precomposed.png">
+		<link rel="stylesheet" href="C:\Users\Katjuska\Desktop\TTU\tarkvaratehnika\sigin/bootstrap.min.css"/>
+		<link rel="stylesheet" href="C:\Users\Katjuska\Desktop\TTU\tarkvaratehnika\sigin/sign.css"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"/>
+	</head>
+	<body>
+		<div class="sign-box">
+			<div class="sign-logo">
+				<img src="C:\Users\Katjuska\Desktop\TTU\tarkvaratehnika\MockupUpgread\images\1.jpg">
+			</div>
+			<div class="sign-box-body text-center">
+				<legend>Sign In as Admin</legend>
+				<form role="form" method="post" id="form" accept-charset="utf-8"> 
+					<div class="form-group has-feedback">
+						<input type="text" name="username" value="" required="required" placeholder="Admin" class="form-control" id="username" maxlength="5" size="30">
+					</div>
+					<div class="form-group has-feedback">
+						<input type="password" name="password" value="" placeholder="Enter password" required="required" class="form-control" id="password" size="30">
+						<span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+					</div>
+					<button type="submit" class="btn btn-primary btn-block" onclick="return CheckPassword()">Sign In </button>
+				</form>
+				<br>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			function CheckPassword() {
+				var passw = "admin";
+				var pasCode = document.getElementById("password");
+				if((pasCode.value.match(/admin/g) != null) && pasCode.value.match(/admin/g)[0] == passw){ 
+					document.location.href = "file:///C:/Users/Katjuska/Documents/GitHub/EASYCOOK-For-Tarkvarathenika/MockupUpgrade/MockupUpgrade/admin.html";
+				} else {  
+					alert('Wrong...!');
+					return false;
+				}
+			}
+		</script>
+
+		<script src="/static/js/vendor/jquery-1.10.2.min.js"></script>
+		<script src="/static/js/bootstrap.min.js"></script>
+		<script src="/static/js/vendor/modernizr-2.6.2.min.js"></script>
+		<script src="/static/js/passVisibility.js"></script>
+		<script src="/static/js/signin.js"></script>
+		<script>var csrf_token = "{{ csrf_token() }}";</script>
+		<script src="/static/js/csrf.js"></script>
+		<script src="/static/js/formsendAJAX.js"></script>
+	</body>
+</html>
