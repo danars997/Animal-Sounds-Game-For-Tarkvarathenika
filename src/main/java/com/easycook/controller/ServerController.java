@@ -70,4 +70,10 @@ public class ServerController{
 
     @GetMapping(value = "/salads")
     public String salads() {return "salads";}
+
+    @GetMapping(value = "/login")
+    public String login() {return "login";}
+
+    @GetMapping(value = "/admin")
+    public String admin() {return "admin";}
 }
