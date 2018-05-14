@@ -55,4 +55,19 @@ public class ServerController{
     {
         return "js/" + jsfile;
     }
+
+    @GetMapping(value = "/desserts")
+    public String desserts() {return "desserts";}
+
+    @GetMapping(value = "/pizza")
+    public String pizza() {return "pizza";}
+
+    @GetMapping(value = "/fish")
+    public String fish() {return "fish";}
+
+    @GetMapping(value = "/meat")
+    public String meat() {return "meat";}
+
+    @GetMapping(value = "/salads")
+    public String salads() {return "salads";}
 }
