@@ -7,6 +7,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import org.json.JSONObject;
+
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
+
 @Controller
 public class ServerController{
     @Autowired
@@ -72,8 +77,37 @@ public class ServerController{
     public String salads() {return "salads";}
 
     @GetMapping(value = "/login")
-    public String login() {return "login";}
+    public String login(@CookieValue(required = false) String admin) {
+        if (admin == null){
+            return "login";
+        }
+
+        return "redirect:/admin";
+    }
 
     @GetMapping(value = "/admin")
-    public String admin() {return "admin";}
+    public String admin(@CookieValue(required = false) String admin) {
+        if (admin != null){
+            return "admin";
+        }
+
+        return "redirect:/";
+    }
+
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public ResponseEntity<Object> checkLogin(@RequestBody String json, HttpServletResponse response) {
+        JSONObject jsonObject = new JSONObject(json);
+
+        String jsonUsername = jsonObject.getString("username");
+        String jsonPassword = jsonObject.getString("password");
+
+
+        if (jsonUsername.equals("Admin") && jsonPassword.equals("admin")) {
+            response.addCookie(new Cookie("admin", "Iamadmin"));
+            return ResponseEntity.ok("Welcome home, Admin");
+        } else {
+            return ResponseEntity.status(403).body(null);
+        }
+
+    }
 }

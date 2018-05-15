@@ -69,27 +69,16 @@
                     <form class="form-horizontal" role="form">
 
 
-                        <table style="width:100%">
+                        <table style="width:100%" id="ordersTable">
                             <tr>
                                 <th>Dish</th>
                                 <th>Number of servings</th>
                                 <th>Contact Name</th>
                                 <th>City</th>
                                 <th>Region</th>
-                                <th>Street and home/flat number</th>
+                                <th>Address</th>
                                 <th>Comments</th>
                                 <th>Contact number</th>
-                            </tr>
-
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
                             </tr>
                         </table>
 
@@ -116,5 +105,31 @@
 </footer> <!-- End Of Footer -->
 
 <a id="back-top" href="/"></a>
+<script type="text/javascript">
+    $.ajax({
+        type:"GET",
+        url:"/getallorders",
+        xhrFields:{withCredentials:true},
+        dataType:"text",
+        success:function (data,status) {
+            var dataArray = JSON.parse(data);
+            for (var i = 0; i < dataArray.length; i++)
+            {
+                var order = '<tr>';
+                order += '<td>' + dataArray[i].dish + '</td>';
+                order += '<td>' + dataArray[i].numberOfServings + '</td>';
+                order += '<td>' + dataArray[i].contactName + '</td>';
+                order += '<td>' + dataArray[i].city + '</td>';
+                order += '<td>' + dataArray[i].region + '</td>';
+                order += '<td>' + dataArray[i].address + '</td>';
+                order += '<td>' + dataArray[i].comments + '</td>';
+                order += '<td>' + dataArray[i].contactNumber + '</td>';
+                order += '</tr>';
+                $('#ordersTable').append(order);
+            }
+        },
+        error:function () { alert("Error"); }
+    });
+</script>
 </body>
 </html>

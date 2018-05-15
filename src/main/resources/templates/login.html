@@ -8,38 +8,47 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="https://clothobserve.com/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"/>
+    <script type="text/javascript" src="https://clothobserve.com/js/vendor/jquery-1.10.2.min.js"></script>
 </head>
 <body>
 <div class="sign-box">
 
     <div class="sign-box-body text-center">
         <legend>Log In as Admin</legend>
-        <form role="form" method="post" id="form" accept-charset="utf-8">
+        <form id="form">
             <div class="form-group has-feedback">
                 <input type="text" name="username" value="" required="required" placeholder="Admin" class="form-control" id="username" maxlength="5" size="30">
             </div>
             <div class="form-group has-feedback">
                 <input type="password" name="password" value="" placeholder="Enter password" required="required" class="form-control" id="password" size="30">
-                <span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
             </div>
-            <button type="submit" class="btn btn-primary btn-block" onclick="return CheckPassword()">Sign In </button>
+            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
         </form>
         <br>
     </div>
 </div>
 
 <script type="text/javascript">
-    function CheckPassword() {
-        var passw = "admin";
-        var pasCode = document.getElementById("password");
-        if((pasCode.value.match(/admin/g) != null) && pasCode.value.match(/admin/g)[0] == passw){
-            document.location.href = "admin";
-        } else {
-            alert('Wrong...!');
-            return false;
-        }
-    }
+    var form=$("#form");
+    form.submit(function(e)
+    {
+        var formObject = {
+            username:$("#username").val(),
+            password:$("#password").val()
+        };
+        var jsonData = JSON.stringify(formObject);
+        e.preventDefault();
+        $.ajax({
+            type:"POST",
+            url:"/login",
+            contentType: "text/plain;charset=UTF-8",
+            data:jsonData,
+            xhrFields:{withCredentials:true},
+            dataType:"text",
+            success:function () { document.location.href = "/admin"; },
+            error:function () { alert("Wrong Credentials!"); }
+        });
+    });
 </script>
 
 </body>
