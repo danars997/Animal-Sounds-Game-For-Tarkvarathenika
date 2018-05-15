@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Log in</title>
+    <meta name="description" content="EasyCook Log In Form">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="https://clothobserve.com/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"/>
+</head>
+<body>
+<div class="sign-box">
+
+    <div class="sign-box-body text-center">
+        <legend>Log In as Admin</legend>
+        <form role="form" method="post" id="form" accept-charset="utf-8">
+            <div class="form-group has-feedback">
+                <input type="text" name="username" value="" required="required" placeholder="Admin" class="form-control" id="username" maxlength="5" size="30">
+            </div>
+            <div class="form-group has-feedback">
+                <input type="password" name="password" value="" placeholder="Enter password" required="required" class="form-control" id="password" size="30">
+                <span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" onclick="return CheckPassword()">Sign In </button>
+        </form>
+        <br>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function CheckPassword() {
+        var passw = "admin";
+        var pasCode = document.getElementById("password");
+        if((pasCode.value.match(/admin/g) != null) && pasCode.value.match(/admin/g)[0] == passw){
+            document.location.href = "admin";
+        } else {
+            alert('Wrong...!');
+            return false;
+        }
+    }
+</script>
+
+</body>
+</html>
